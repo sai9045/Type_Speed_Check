@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="blink" style="text-align:center"><p id="p2" >Your Performance analytics</p>
+</div>
+
+<div class="text-center">
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;margin:10px 500px">
+  <div class="card-header" style="size:32px;color:yellow;"><h4>Performance-Details</h4></div>
+  <div class="card-body">
+    <h4 class="card-text" style="color:yellow;size:32px;font-family:Arial">Accuracy :{{accuracy}}%</h4>
+
+       <h4 class="card-text " style="color:yellow;size:32px;font-family:Arial;">Speed :{{speed}} WPM</h4>
+      <h4 class="card-text" style="color:yellow;size:32px;font-family:Arial;">Time_taken :{{total_time_taken}} Min</h4>
+  </div>
+</div>
+    </div>
+
+<div class="text-center">
+<div  class="btn-group">
+
+  <a href="{{url_for('home')}}" class="btn btn-primary active" style="margin:10px 500px;border-radius:12px;" aria-current="page"><h3>BACK</h3></a>
+        </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

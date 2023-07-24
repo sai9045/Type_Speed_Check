@@ -1,0 +1,39 @@
+body {
+        background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+         background-size: 100% 200%;
+      }
+.blink{
+		width:400px;
+		height: 50px;
+		padding: 15px;
+		text-align: center;
+		line-height: 50px;
+		margin: 10px 450px;
+}
+#p1{
+		font-size: 34px;
+		font-family: cursive;
+		text-align:center;
+		color: magenta;
+		animation: blink 1s linear infinite;
+
+}
+#p2{
+		font-size: 36px;
+		font-family: cursive;
+		text-align:center;
+		color: magenta;
+		animation: blink 1s linear infinite;
+}
+#p3{
+		font-size: 36px;
+		font-family: cursive;
+		text-align:center;
+		color: magenta;
+		animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}

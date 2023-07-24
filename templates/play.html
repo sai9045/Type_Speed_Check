@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+      <style>
+      .undetectable {
+        -webkit-user-select: none;
+        -webkit-touch-callouts: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #cc0000;
+      }
+    </style>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="blink" style="text-align:center"><p id="p1" >Type the Text below</p>
+</div>
+<br>
+<br>
+
+<h5 class="undetectable" style="color:#F11A7B;font-family:Arial;margin:10px 200px;text-align: justify;text-justify: inter-word;">{{l}}</h5>
+<br>
+ <form method="POST">
+     <div  style="margin:10px 200px;">
+         <textarea  name="text_typed" spellcheck="false" placeholder="Type the Texts here" rows="6" cols="130">
+
+         </textarea>
+
+</div>
+     <div class="text-center">
+       <button type="submit" class="btn btn-primary" style="border-radius:12px"><h3>Check Typing performance</h3></button>
+         </div>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
+
