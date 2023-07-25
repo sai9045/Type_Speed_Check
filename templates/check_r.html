@@ -41,9 +41,10 @@
     <p class="card-text" style="color:yellow;size:32px;font-family:Arial">Expert : Speed>=50 WPM</p>
 
        <p class="card-text " style="color:yellow;size:32px;font-family:Arial;">Armateur:40 to 50WPM</p>
-      <p class="card-text" style="color:yellow;size:32px;font-family:Arial;">Good: 30 to 40WPM </p>
-      <p class="card-text" style="color:yellow;size:32px;font-family:Arial;">Novice: 20 to 30WPM <p>
-           <p class="card-text" style="color:yellow;size:32px;font-family:Arial;">Poor: Speed<20WPM <p>
+      <p class="card-text" style="color:yellow;size:32px;font-family:Arial;">Very Good: 30 to 40WPM </p>
+      <p class="card-text" style="color:yellow;size:32px;font-family:Arial;">Good: 25 to 30WPM <p>
+           <p class="card-text" style="color:yellow;size:32px;font-family:Arial;">Novice: 20 to 25 WPM <p>
+                  <p class="card-text" style="color:yellow;size:32px;font-family:Arial;">Poor:<20 WPM <p>
   </div>
 </div>
     </div>
@@ -51,19 +52,23 @@
     </div>
 {% if speed >50 %}
     <div class="text-center">
-        <h3 style="color:green;">You are Expert in accuracy of speed typing</h3>
+        <h3 style="color:green;">You are Expert in speed typing</h3>
     </div>
 {% elif 40 < speed <50 %}
                <div class="text-center">
-        <h3 style="color:green;">You are Armateur in accuracy of speed typing</h3>
+        <h3 style="color:green;">You are Armateur in   speed typing</h3>
     </div>
 {% elif 30<speed<40 %}
                <div class="text-center">
-        <h3 style="color:yellow;">You are good in accuracy of speed typing</h3>
+        <h3 style="color:yellow;">You are very good in  speed typing</h3>
     </div>
-{% elif 20<speed<30 %}
+{% elif 25<speed<30 %}
           <div class="text-center">
-        <h3 style="color:orange;">You are novice in accuracy of speed typing</h3>
+        <h3 style="color:orange;">You are good in  speed typing</h3>
+    </div>
+{% elif 20<speed<25 %}
+          <div class="text-center">
+        <h3 style="color:orange;">You are novice in  speed typing</h3>
     </div>
 {% else %}
           <div class="text-center">
