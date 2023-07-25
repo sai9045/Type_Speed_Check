@@ -30,8 +30,46 @@
     </div>
     <div class="text-center">
         <h3 style="color:purple;">Wrong words you typed are {{d}}</h3>
-    </div>
+    </div
+        <br>
+    <div class="row", style="text-align:centre;">
+        <div class="col-lg-8 col-md-10 mx-auto">
+<div class="container h-100 d-flex justify-content-center">
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header" style="size:32px;color:yellow;"><h4>Speed Details</h4></div>
+  <div class="card-body">
+    <h4 class="card-text" style="color:yellow;size:32px;font-family:Arial">Expert : Speed>=50 WPM</h4>
 
+       <h4 class="card-text " style="color:yellow;size:32px;font-family:Arial;">Armateur:40<Speed<=50 WPM</h4>
+      <h4 class="card-text" style="color:yellow;size:32px;font-family:Arial;">Good: 30<Speed<=40 WPM </h4>
+      <h4 class="card-text" style="color:yellow;size:32px;font-family:Arial;">Novice: 20<Speed<30 WPM </h4>
+           <h4 class="card-text" style="color:yellow;size:32px;font-family:Arial;">Poor: Speed<20 </h4>
+  </div>
+</div>
+    </div>
+            </div>
+    </div>
+{% if speed >50 %}
+    <div class="text-center">
+        <h3 style="color:green;">You are Expert in accuracy of speed typing</h3>
+    </div>
+{% elif 40 < speed <50 %}
+               <div class="text-center">
+        <h3 style="color:green;">You are Armateur in accuracy of speed typing</h3>
+    </div>
+{% elif 30<speed<40 %}
+               <div class="text-center">
+        <h3 style="color:green;">You are good in accuracy of speed typing</h3>
+    </div>
+{% elif 20<speed<30 %}
+          <div class="text-center">
+        <h3 style="color:green;">You are novice in accuracy of speed typing</h3>
+    </div>
+{% else %}
+          <div class="text-center">
+        <h3 style="color:green;">You are novice in accuracy of speed typing</h3>
+    </div>
+{% endif %}        
 <div class="text-center">
 <div  class="btn-group">
 
