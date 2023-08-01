@@ -49,15 +49,18 @@ def check_results():
     total_time_taken_min_round = round(total_time_taken_min)
     speed = len(text_list) / total_time_taken_min
     speed_round = round(speed)
-    accuracy_100 = accuracy * 100
-    accuracy_100_round=round(accuracy_100,1)
     d=[]
     for i in text_list:
         if i in l_list:
             pass
         else:
             d.append(i)
-
+    if accuracy>100:
+        diff=len(l_list)-len(d)
+        accurarcy=diff/len(l_list)
+    
+    accuracy_100 = accuracy * 100
+    accuracy_100_round=round(accuracy_100,1)
     return render_template("check_r.html", accuracy=accuracy_100_round, total_time_taken=total_time_taken_min_round,
                            speed=speed_round,d=d)
 
