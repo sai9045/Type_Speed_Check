@@ -57,7 +57,7 @@ def check_results():
             d.append(i)
     if accuracy>1:
         diff=len(l_list)-len(d)
-        accurarcy=diff/len(l_list)
+        accuracy=diff/len(l_list)
     
     accuracy_100 = accuracy * 100
     accuracy_100_round=round(accuracy_100,1)
