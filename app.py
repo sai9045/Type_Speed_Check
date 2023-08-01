@@ -55,7 +55,7 @@ def check_results():
             pass
         else:
             d.append(i)
-    if accuracy>100:
+    if accuracy>1:
         diff=len(l_list)-len(d)
         accurarcy=diff/len(l_list)
     
